@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Before the Stories Fade — an interactive biography about a father, his stories, and a daughter's decision to listen.">
+  <title>Before the Stories Fade</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <header class="site-header" id="top">
+    <a class="wordmark" href="#top">Before the Stories Fade</a>
+    <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="siteNav">Stories</button>
+    <nav id="siteNav" aria-label="Story chapters">
+      <a href="#beginning">Beginning</a>
+      <a href="#stories">His Stories</a>
+      <a href="#why-now">Why Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="pageTitle">
+      <div class="hero-image placeholder-photo" role="img" aria-label="Placeholder for an ordinary family photograph of Leslie and her dad">
+        <span>Your opening family photograph</span>
+      </div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">An interactive biography</p>
+        <h1 id="pageTitle">Before the<br><em>Stories Fade</em></h1>
+        <p class="hero-intro">A father who never stopped talking.<br>A daughter finally ready to listen.</p>
+        <a class="begin-link" href="#beginning">Begin the story <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="narrative light-section" id="beginning">
+      <div class="narrow-column reveal">
+        <p class="opening-line">There is a saying that family isn't only the family you're born into. Sometimes family is made up of the people you choose—and the people who choose you.</p>
+        <p class="statement">My dad chose me.</p>
+        <p>He came into my life when I was very young and eventually adopted both my sister and me. Technically, he is not my biological father. But that distinction has never meant much to me. I don't call him my adopted dad. I don't think of him as my adopted dad.</p>
+        <p>He's just my dad.</p>
+      </div>
+    </section>
+
+    <section class="turning-point">
+      <div class="turning-photo placeholder-photo" role="img" aria-label="Placeholder for a photograph of Leslie's dad telling a story">
+        <span>A photograph of Dad in his element</span>
+      </div>
+      <div class="turning-copy reveal">
+        <p class="eyebrow">And my dad has stories</p>
+        <h2>So many stories.</h2>
+        <p>There is an almost constant stream of words when you're around him. He'll talk while you're watching a movie, working beside him in the garden, or driving down the road to go fishing.</p>
+        <p>Give him enough time, and one story will lead to another, which will lead to another.</p>
+      </div>
+    </section>
+
+    <section class="story-index" id="stories" aria-labelledby="storiesTitle">
+      <div class="section-heading reveal">
+        <p class="eyebrow">The lives within one life</p>
+        <h2 id="storiesTitle">Choose a story</h2>
+        <p>Each chapter will eventually combine his voice, family photographs, and the pieces of history we can still recover.</p>
+      </div>
+
+      <div class="story-grid">
+        <article class="story-card reveal">
+          <span class="chapter-number">01</span>
+          <p class="chapter-place">Minnesota to Alaska</p>
+          <h3>The Long Walk North</h3>
+          <p>I know that he hiked to Alaska. I don't yet know why he went, what happened along the way, or what he found when he arrived.</p>
+          <button class="story-button" data-story="alaska">Open this chapter</button>
+        </article>
+
+        <article class="story-card reveal">
+          <span class="chapter-number">02</span>
+          <p class="chapter-place">Vietnam</p>
+          <h3>The Story He Brought Home</h3>
+          <p>He served in Vietnam and returned with a broken back. This chapter will hold the parts of that experience he chooses to tell.</p>
+          <button class="story-button" data-story="vietnam">Open this chapter</button>
+        </article>
+
+        <article class="story-card reveal">
+          <span class="chapter-number">03</span>
+          <p class="chapter-place">Boeing</p>
+          <h3>Building Something New</h3>
+          <p>He helped build one of the first Boeing 747s—one more unexpected turn in a life spent learning, making, and reinventing.</p>
+          <button class="story-button" data-story="boeing">Open this chapter</button>
+        </article>
+
+        <article class="story-card reveal">
+          <span class="chapter-number">04</span>
+          <p class="chapter-place">Northwest Arkansas</p>
+          <h3>The Climber and the Caver</h3>
+          <p>He climbed, explored caves, and built a climbing gym. Adventure became something he could create and share with other people.</p>
+          <button class="story-button" data-story="climbing">Open this chapter</button>
+        </article>
+
+        <article class="story-card reveal">
+          <span class="chapter-number">05</span>
+          <p class="chapter-place">A lifetime of words</p>
+          <h3>The Storyteller</h3>
+          <p>He became part of a storytelling group and brought stories to schools. Of all his reinventions, perhaps this one was inevitable.</p>
+          <button class="story-button" data-story="storyteller">Open this chapter</button>
+        </article>
+
+        <article class="story-card featured reveal">
+          <span class="chapter-number">06</span>
+          <p class="chapter-place">Our family</p>
+          <h3>The Father He Chose to Be</h3>
+          <p>In his twenties, with an entire life ahead of him, he chose to become the father of a little girl who wasn't biologically his—and soon, her sister too.</p>
+          <button class="story-button" data-story="father">Open this chapter</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="why-now" id="why-now">
+      <div class="why-photo placeholder-photo" role="img" aria-label="Placeholder for a recent portrait of Leslie's father">
+        <span>A recent portrait of Dad</span>
+      </div>
+      <div class="why-copy reveal">
+        <p class="eyebrow">Why now</p>
+        <h2>I wish I had listened more closely.</h2>
+        <p>For years, knowing the outlines of his adventures seemed like enough. It isn't anymore.</p>
+        <p>My father's memory is beginning to fade. The stories I once thought I could hear whenever I wanted won't always be available to me.</p>
+        <p>So now I want to listen.</p>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="narrow-column reveal">
+        <p>This project is my attempt to capture as many of those stories as I can while he can still tell them. It isn't meant to turn him into someone larger than he is. My dad is complicated. He is also brilliant, creative, endlessly curious, and almost impossible to describe with a single title.</p>
+        <p class="statement">He chose us.<br>This is my chance to choose his stories.</p>
+        <p>I'm making it for him. I'm making it for me.</p>
+        <p class="final-line">And I'm making it before the stories fade.</p>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="story-dialog" id="storyDialog" aria-labelledby="dialogTitle">
+    <button class="dialog-close" id="dialogClose" aria-label="Close chapter">×</button>
+    <p class="eyebrow" id="dialogChapter"></p>
+    <h2 id="dialogTitle"></h2>
+    <div class="dialog-photo placeholder-photo"><span>Chapter photograph</span></div>
+    <p id="dialogCopy"></p>
+    <div class="audio-coming">
+      <span aria-hidden="true">◉</span>
+      <div><strong>His voice will live here.</strong><br><small>Interview audio will be added after it is recorded and edited.</small></div>
+    </div>
+  </dialog>
+
+  <footer>
+    <p>Before the Stories Fade</p>
+    <p>An interactive biography by Leslie Tate</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
