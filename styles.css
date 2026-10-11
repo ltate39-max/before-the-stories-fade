@@ -5,7 +5,7 @@
   --rust: #9c4932;
   --forest: #213d34;
   --gold: #cc9b4f;
-  --line: rgba(39, 39, 34, 0.2);
+  --line: rgba(245, 239, 227, 0.18);
   --serif: "Libre Baskerville", Georgia, serif;
   --sans: "DM Sans", Arial, sans-serif;
 }
@@ -63,8 +63,26 @@ h1 em { color: var(--gold); font-weight: 400; }
 .story-card p:not(.chapter-place) { font-size: .94rem; }
 .story-button { align-self: flex-start; margin-top: auto; padding: .7rem 0; color: inherit; background: transparent; border: 0; border-bottom: 1px solid currentColor; cursor: pointer; }
 
+.poetry-corner { padding: clamp(6rem, 11vw, 10rem) 5vw; background: #1c211e; }
+.poetry-inner { max-width: 850px; margin: auto; }
+.poetry-inner h2 { margin: 0 0 1.5rem; font-size: clamp(2.7rem, 6vw, 5rem); }
+.poetry-intro { max-width: 630px; margin: 0 0 1rem; font-size: 1.08rem; }
+.poetry-intro:last-of-type { margin-bottom: 3rem; }
+.poem-list { border-top: 1px solid var(--line); }
+.poem-select { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding: 1.5rem 0; color: var(--cream); background: transparent; border: 0; border-bottom: 1px solid var(--line); text-align: left; cursor: pointer; }
+.poem-select:hover, .poem-select:focus-visible { color: var(--gold); }
+.poem-select-title { font-family: var(--serif); font-size: clamp(1.25rem, 2.5vw, 1.7rem); }
+.poem-select-arrow { color: var(--gold); font-size: 1.4rem; }
+.poem-text { min-height: 5rem; margin: 1rem 0 2rem; font-family: var(--serif); font-size: 1.06rem; line-height: 2; white-space: pre-wrap; }
+.poem-note { margin: -1rem 0 2rem; color: var(--gold); font-family: var(--serif); font-style: italic; }
+.poem-original { display: inline-block; margin-bottom: 2rem; color: var(--gold); text-underline-offset: .25em; }
+.poem-audio { padding-top: 1.5rem; border-top: 1px solid var(--line); }
+.poem-audio p { margin: 0 0 .75rem; }
+.poem-audio audio { display: block; width: 100%; max-width: 520px; }
+.poem-audio-note { color: rgba(245, 239, 227, .73); font-size: .9rem; }
+
 .why-now { background: var(--ink); }
-.why-photo { order: 2; background: linear-gradient(135deg, #51473e, #171713); }
+.why-photo { order: 2; background: #171713 url("images/dad-portrait.jpg") center 35% / cover no-repeat; }
 .closing { padding: clamp(7rem, 14vw, 13rem) 5vw; background: #1d1e1a; }
 .final-line { margin-top: 4rem !important; color: var(--gold); font-family: var(--serif); font-size: clamp(1.8rem, 4vw, 3.5rem) !important; font-style: italic; }
 

@@ -19,6 +19,7 @@
     <nav id="siteNav" aria-label="Story chapters">
       <a href="#beginning">Beginning</a>
       <a href="#stories">His Stories</a>
+      <a href="#poetry">Poetry</a>
       <a href="#why-now">Why Now</a>
     </nav>
   </header>
@@ -116,10 +117,19 @@
       </div>
     </section>
 
-    <section class="why-now" id="why-now">
-      <div class="why-photo placeholder-photo" role="img" aria-label="Placeholder for a recent portrait of Leslie's father">
-        <span>A recent portrait of Dad</span>
+    <section class="poetry-corner" id="poetry" aria-labelledby="poetryTitle">
+      <div class="poetry-inner reveal">
+        <p class="eyebrow">The way he plays with words</p>
+        <h2 id="poetryTitle">In His Own Words</h2>
+        <p class="poetry-intro">My dad loves the English language. I mean, loves it. Give him a word or a turn of phrase, and he can make a limerick, a poem, or a song out of it. He loves to say words, write them down, and play with what they might mean.</p>
+        <p class="poetry-intro">This corner is a place for that part of him: his poems on the page and, when we have recordings, in his own voice.</p>
+        <p class="poetry-intro">These are transcribed from his typed pages, with his original wording kept intact. You can open each page to see it as he wrote it.</p>
+        <div class="poem-list" id="poemList" aria-label="Poems"></div>
       </div>
+    </section>
+
+    <section class="why-now" id="why-now">
+      <div class="why-photo" role="img" aria-label="Black-and-white portrait of Dad seated against a wooden wall"></div>
       <div class="why-copy reveal">
         <p class="eyebrow">Why now</p>
         <h2>I wish I had listened more closely.</h2>
@@ -149,6 +159,20 @@
       <span aria-hidden="true">◉</span>
       <div><strong>His voice will live here.</strong><br><small>Interview audio will be added after it is recorded and edited.</small></div>
     </div>
+  </dialog>
+
+  <dialog class="story-dialog poem-dialog" id="poemDialog" aria-labelledby="poemTitle">
+    <button class="dialog-close" id="poemClose" type="button" aria-label="Close poem">×</button>
+    <p class="eyebrow">A poem by Dad</p>
+    <h2 id="poemTitle"></h2>
+    <p class="poem-note" id="poemNote" hidden></p>
+    <div class="poem-text" id="poemText"></div>
+    <a class="poem-original" id="poemOriginal" href="#" target="_blank" rel="noopener">View the original typed page ↗</a>
+    <div class="poem-audio" id="poemAudioWrap" hidden>
+      <p>Listen to him read this poem</p>
+      <audio id="poemAudio" controls preload="none" aria-label="Poem recited by Dad"></audio>
+    </div>
+    <p class="poem-audio-note" id="poemAudioNote">An audio reading can be added here later.</p>
   </dialog>
 
   <footer>
