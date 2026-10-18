@@ -22,7 +22,7 @@ const stories = {
   storyteller: {
     chapter: "Chapter 05 · A lifetime of words",
     title: "The Storyteller",
-    copy: "Here, the form and subject meet. The man whose constant talking fills family memories also deliberately became a storyteller, carrying stories beyond the family and into classrooms."
+    copy: "At the end of a conversation about something else, my dad began talking about storytelling. He started reciting a poem but couldn't remember the rest. By coincidence, I had a copy. Here is that unedited part of our conversation, alongside all four pages of the complete poem."
   },
   father: {
     chapter: "Chapter 06 · Our family",
@@ -42,11 +42,16 @@ document.querySelectorAll(".story-button").forEach((button) => {
     dialogChapter.textContent = story.chapter;
     dialogTitle.textContent = story.title;
     dialogCopy.textContent = story.copy;
+    const hasRecording = button.dataset.story === "storyteller";
+    document.querySelector("#storyRecording").hidden = !hasRecording;
+    document.querySelector("#storyAudioComing").hidden = hasRecording;
+    document.querySelector("#storyPhotoPlaceholder").hidden = hasRecording;
     dialog.showModal();
   });
 });
 
 document.querySelector("#dialogClose").addEventListener("click", () => dialog.close());
+dialog.addEventListener("close", () => document.querySelector("#storyAudio").pause());
 dialog.addEventListener("click", (event) => {
   if (event.target === dialog) dialog.close();
 });

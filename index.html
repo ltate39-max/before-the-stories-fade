@@ -103,7 +103,7 @@
           <span class="chapter-number">05</span>
           <p class="chapter-place">A lifetime of words</p>
           <h3>The Storyteller</h3>
-          <p>He became part of a storytelling group and brought stories to schools. Of all his reinventions, perhaps this one was inevitable.</p>
+          <p>Listen to an unedited conversation with my dad about storytelling, then read the complete poem he began reciting: The Host of Deadmans Hollow.</p>
           <button class="story-button" data-story="storyteller">Open this chapter</button>
         </article>
 
@@ -153,9 +153,21 @@
     <button class="dialog-close" id="dialogClose" aria-label="Close chapter">×</button>
     <p class="eyebrow" id="dialogChapter"></p>
     <h2 id="dialogTitle"></h2>
-    <div class="dialog-photo placeholder-photo"><span>Chapter photograph</span></div>
+    <div class="dialog-photo placeholder-photo" id="storyPhotoPlaceholder"><span>Chapter photograph</span></div>
     <p id="dialogCopy"></p>
-    <div class="audio-coming">
+    <div id="storyRecording" hidden>
+      <h3>Listen to our conversation</h3>
+      <p>Unedited conversation excerpt · About 6 minutes</p>
+      <audio id="storyAudio" controls preload="none" aria-label="Leslie and her dad discussing storytelling">
+        <source src="audio/storytelling-conversation.mp3" type="audio/mpeg">
+        <a href="audio/storytelling-conversation.mp3">Download the recording</a>
+      </audio>
+      <p><a href="audio/storytelling-conversation.mp3" download>Download the audio</a></p>
+      <h3>The Host of Deadmans Hollow</h3>
+      <p>The complete poem, preserved in photographs of all four typed pages.</p>
+      <a class="begin-link" href="deadmans-hollow.html" target="_blank" rel="noopener">Read the complete poem ↗</a>
+    </div>
+    <div class="audio-coming" id="storyAudioComing">
       <span aria-hidden="true">◉</span>
       <div><strong>His voice will live here.</strong><br><small>Interview audio will be added after it is recorded and edited.</small></div>
     </div>

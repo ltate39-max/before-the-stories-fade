@@ -11,6 +11,7 @@
 }
 
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html { scroll-behavior: smooth; }
 body { margin: 0; color: var(--cream); background: var(--paper); font-family: var(--sans); line-height: 1.75; }
 button, a { font: inherit; }
@@ -79,6 +80,8 @@ h1 em { color: var(--gold); font-weight: 400; }
 .poem-audio { padding-top: 1.5rem; border-top: 1px solid var(--line); }
 .poem-audio p { margin: 0 0 .75rem; }
 .poem-audio audio { display: block; width: 100%; max-width: 520px; }
+#storyAudio { display: block; width: 100%; margin: 1rem 0; }
+#storyRecording h3 { margin: 2rem 0 .75rem; font-size: 1.5rem; }
 .poem-audio-note { color: rgba(245, 239, 227, .73); font-size: .9rem; }
 
 .why-now { background: var(--ink); }

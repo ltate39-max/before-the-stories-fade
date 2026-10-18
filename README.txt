@@ -47,3 +47,16 @@ SITE FILES
 - images/ contains Dad's portrait and photographs of the original typed poems.
 
 This is a first draft, not a locked design. The placeholders are intentional: they let the structure work before the final photographs and recordings are ready.
+
+STORYTELLING UPDATE — OCTOBER 18
+The Storyteller chapter now includes an unedited conversation excerpt (about 6 minutes).
+The CAF recording was converted to MP3 for browser playback; it was not cut.
+The complete poem is available as four photographed typed pages on deadmans-hollow.html.
+An audio transcript and a typed transcription of this poem have not been added yet.
+
+UPLOAD THIS UPDATE TO GITHUB
+Upload index.html, styles.css, script.js, README.txt, and deadmans-hollow.html
+at the repository's top level. Also upload the audio folder and images folder,
+keeping their names and subfolders. Do not upload the ZIP itself or nest the site
+inside another before-the-stories-fade folder. The existing portrait and four
+poetry-corner poems are included in this full package.
