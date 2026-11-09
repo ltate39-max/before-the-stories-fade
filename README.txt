@@ -7,13 +7,13 @@ HOW TO OPEN IT
 
 WHAT IS INCLUDED
 - A responsive opening page for desktop, tablet, and phone
-- The beginning of Leslie's narration
+- Leslie's 2:07 spoken introduction, with a written version and a photo of her and Dad
 - Six interactive story chapters
 - A poetry corner with four of Dad's typed poems, including "Lefty," which he wrote for Leslie: click a title to read it or see its original page; recordings can be added later
 - Pop-up chapter previews
 - A mobile navigation menu
 - Subtle scroll animation and a reading-progress bar
-- Dad's black-and-white portrait in the "Why Now" section, plus placeholders for other photographs and interview audio
+- Dad in a yellow kayak beside the title and his black-and-white portrait beside "So many stories"
 
 ADD ANOTHER POEM
 1. Open script.js in VS Code and find the "const poems" section.

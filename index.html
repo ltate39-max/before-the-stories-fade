@@ -26,36 +26,60 @@
 
   <main>
     <section class="hero" aria-labelledby="pageTitle">
-      <div class="hero-image placeholder-photo" role="img" aria-label="Placeholder for an ordinary family photograph of Leslie and her dad">
-        <span>Your opening family photograph</span>
-      </div>
-      <div class="hero-shade"></div>
       <div class="hero-content">
         <p class="eyebrow">An interactive biography</p>
         <h1 id="pageTitle">Before the<br><em>Stories Fade</em></h1>
         <p class="hero-intro">A father who never stopped talking.<br>A daughter finally ready to listen.</p>
         <a class="begin-link" href="#beginning">Begin the story <span aria-hidden="true">↓</span></a>
       </div>
+      <img class="hero-image" src="images/dad-in-kayak.jpg" alt="Dad grinning in a yellow kayak with a lily pad on his head">
     </section>
 
-    <section class="narrative light-section" id="beginning">
+    <section class="narrative light-section" id="beginning" aria-labelledby="introTitle">
+      <div class="intro-feature">
+        <div class="intro-listen">
+          <p class="eyebrow">In my own voice</p>
+          <h2 id="introTitle">An introduction</h2>
+          <p>Listen to Leslie’s introduction · 2:07</p>
+          <audio controls preload="none" aria-label="Leslie’s introduction to Before the Stories Fade">
+            <source src="audio/before-the-stories-fade-intro.mp3" type="audio/mpeg">
+            <a href="audio/before-the-stories-fade-intro.mp3">Listen to the introduction</a>
+          </audio>
+        </div>
+        <figure class="intro-photo">
+          <img src="images/leslie-and-dad.jpg" alt="Leslie and her dad smiling by the water" loading="lazy">
+          <figcaption>Dad and me.</figcaption>
+        </figure>
+      </div>
+      <details class="intro-script narrow-column">
+        <summary>Read the introduction</summary>
+        <p>I’ve wanted to tell my dad’s story for a long time.</p>
+        <p>He hasn’t saved the world. He’s not a superhero. He’s a complicated, funny, patient man. Sometimes impatient. He loves a problem he can figure out, and he loves to play with words. I don’t think I really appreciated that about him until the last couple of years, when I started noticing how much of his memory was slipping away.</p>
+        <p>When you’re a kid, you don’t think about your parents getting old. Or at least I didn’t. And even in my forties and fifties, I could see my mom getting older, but somehow I didn’t see it with Dad.</p>
+        <p>Then one day we went for a walk in the woods. I’d spent my whole life trying to keep up with him. And that day, he asked if we could slow down. He was having trouble keeping up with me.</p>
+        <p>That shook my world.</p>
+        <p>My dad has stories about his childhood, about the things he got up to as a young man, and about being a parent. And some of them I’d heard, oh, about eighty million times. I knew what was coming next, so I stopped listening. I figured if I ever wanted to hear one of those stories again, all I had to do was ask.</p>
+        <p>For a long time, that was true. His memory was sharp, and my dad has never been shy. He’ll talk to anybody for as long as they’ll let him. But now there are stories he starts telling and can’t quite finish. For a while, the changes seemed slow. Lately, they’re coming faster than I know how to keep up with.</p>
+        <p>I hate watching that happen. I don’t know how else to say it.</p>
+        <p>So I started listening again. And I started recording some of our conversations. Here, you’ll hear him tell some of his stories, and you’ll find a few of the poems he wrote. I wanted to put them somewhere I could come back to, and somewhere other people could get to know him a little, too.</p>
+        <p>He’s my dad. I love him. And I’d like you to meet him.</p>
+        <p>This is <em>Before the Stories Fade</em>.</p>
+      </details>
       <div class="narrow-column reveal">
         <p class="opening-line">There is a saying that family isn't only the family you're born into. Sometimes family is made up of the people you choose—and the people who choose you.</p>
         <p class="statement">My dad chose me.</p>
-        <p>He came into my life when I was very young and eventually adopted both my sister and me. Technically, he is not my biological father. But that distinction has never meant much to me. I don't call him my adopted dad. I don't think of him as my adopted dad.</p>
+        <p>He came into my life when I was very young and eventually adopted my sister and me. Technically, while he is not my biological father, that distinction never meant much to me. I don't call him my adopted dad. I don't think of him as my adopted dad.</p>
         <p>He's just my dad.</p>
       </div>
     </section>
 
     <section class="turning-point">
-      <div class="turning-photo placeholder-photo" role="img" aria-label="Placeholder for a photograph of Leslie's dad telling a story">
-        <span>A photograph of Dad in his element</span>
-      </div>
+      <img class="turning-photo" src="images/dad-portrait.jpg" alt="Black-and-white portrait of Dad seated against a wooden wall" loading="lazy">
       <div class="turning-copy reveal">
         <p class="eyebrow">And my dad has stories</p>
         <h2>So many stories.</h2>
         <p>There is an almost constant stream of words when you're around him. He'll talk while you're watching a movie, working beside him in the garden, or driving down the road to go fishing.</p>
-        <p>Give him enough time, and one story will lead to another, which will lead to another.</p>
+        <p>Give him enough time, and one story will lead to another, and then another, which will lead to another.</p>
       </div>
     </section>
 
@@ -107,7 +131,7 @@
           <button class="story-button" data-story="storyteller">Open this chapter</button>
         </article>
 
-        <article class="story-card featured reveal">
+        <article class="story-card reveal">
           <span class="chapter-number">06</span>
           <p class="chapter-place">Our family</p>
           <h3>The Father He Chose to Be</h3>
@@ -124,12 +148,12 @@
         <p class="poetry-intro">My dad loves the English language. I mean, loves it. Give him a word or a turn of phrase, and he can make a limerick, a poem, or a song out of it. He loves to say words, write them down, and play with what they might mean.</p>
         <p class="poetry-intro">This corner is a place for that part of him: his poems on the page and, when we have recordings, in his own voice.</p>
         <p class="poetry-intro">These are transcribed from his typed pages, with his original wording kept intact. You can open each page to see it as he wrote it.</p>
+        <p class="poetry-credit">Poems by my dad. Shared with his permission.</p>
         <div class="poem-list" id="poemList" aria-label="Poems"></div>
       </div>
     </section>
 
     <section class="why-now" id="why-now">
-      <div class="why-photo" role="img" aria-label="Black-and-white portrait of Dad seated against a wooden wall"></div>
       <div class="why-copy reveal">
         <p class="eyebrow">Why now</p>
         <h2>I wish I had listened more closely.</h2>

@@ -27,26 +27,34 @@ a { color: inherit; }
 .site-header nav a:hover, .site-header nav a:focus-visible { color: var(--gold); }
 .menu-button { display: none; color: white; background: transparent; border: 1px solid rgba(255,255,255,.6); padding: .4rem .75rem; }
 
-.hero { position: relative; min-height: 100svh; display: grid; align-items: end; overflow: hidden; color: white; }
-.hero-image { position: absolute; inset: 0; border: 0; border-radius: 0; background: linear-gradient(135deg, #625e54, #252b29 75%); }
-.hero-image span { position: absolute; right: 5vw; bottom: 3rem; color: rgba(255,255,255,.55); }
-.hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,17,15,.78), rgba(9,17,15,.15)), linear-gradient(0deg, rgba(9,17,15,.7), transparent 55%); }
-.hero-content { position: relative; z-index: 2; width: min(900px, 90vw); margin: 0 auto; padding: 10rem 0 9vh; }
+.hero { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); align-items: center; gap: clamp(2rem, 5vw, 6rem); min-height: 90svh; padding: 7rem 5vw 4rem; color: white; background: #121714; }
+.hero-content { justify-self: end; width: min(100%, 720px); }
+.hero-image { display: block; width: 100%; max-width: 480px; height: auto; border: 1px solid var(--line); }
 .eyebrow { margin: 0 0 1rem; color: var(--gold); font-size: .76rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; }
 h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; }
-h1 { max-width: 900px; margin: 0; font-size: clamp(3.4rem, 9vw, 8rem); letter-spacing: -.055em; }
+h1 { max-width: 900px; margin: 0; font-size: clamp(3rem, 6.6vw, 7.5rem); letter-spacing: -.055em; }
 h1 em { color: var(--gold); font-weight: 400; }
 .hero-intro { margin: 2rem 0; font-family: var(--serif); font-size: clamp(1rem, 2vw, 1.35rem); }
 .begin-link { display: inline-flex; gap: .8rem; align-items: center; padding: .8rem 0; text-decoration: none; border-bottom: 1px solid var(--gold); }
 
 .light-section { padding: clamp(6rem, 12vw, 11rem) 5vw; background: var(--paper); }
+.intro-feature { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: clamp(2rem, 5vw, 5rem); max-width: 1100px; margin: 0 auto 2rem; }
+.intro-listen h2 { margin: 0; font-size: clamp(2.4rem, 5vw, 4.25rem); }
+.intro-listen audio { display: block; width: 100%; max-width: 400px; }
+.intro-photo { margin: 0; }
+.intro-photo img { display: block; width: 100%; height: auto; }
+.intro-photo figcaption { padding-top: .5rem; font-size: .9rem; color: var(--cream); }
+.intro-script { padding: 1.25rem 0; border-block: 1px solid var(--line); }
+.intro-script summary { width: fit-content; color: var(--gold); cursor: pointer; }
+.intro-script summary + p { margin-top: 1.5rem; }
+.intro-script + .narrow-column { margin-top: clamp(3rem, 8vw, 6rem); }
 .narrow-column { max-width: 760px; margin: auto; }
 .narrow-column p { margin: 0 0 1.5rem; font-size: 1.08rem; }
 .opening-line { font-family: var(--serif); font-size: clamp(1.5rem, 3vw, 2.25rem) !important; line-height: 1.55; }
 .statement { margin: 3rem 0 !important; color: var(--rust); font-family: var(--serif); font-size: clamp(2rem, 5vw, 3.8rem) !important; line-height: 1.25; }
 
-.turning-point, .why-now { display: grid; grid-template-columns: 1fr 1fr; min-height: 80vh; background: var(--forest); color: var(--cream); }
-.turning-photo, .why-photo { min-height: 620px; border: 0; border-radius: 0; background: linear-gradient(150deg, #5a675e, #1e2824); }
+.turning-point { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); background: var(--forest); color: var(--cream); }
+.turning-photo { display: block; align-self: center; width: 100%; height: auto; max-height: 820px; object-fit: contain; }
 .turning-copy, .why-copy { align-self: center; max-width: 650px; padding: clamp(4rem, 9vw, 8rem); }
 .turning-copy h2, .why-copy h2 { margin: 0 0 2rem; font-size: clamp(2.7rem, 5vw, 5rem); }
 
@@ -56,10 +64,8 @@ h1 em { color: var(--gold); font-weight: 400; }
 .story-grid { display: grid; grid-template-columns: repeat(3, 1fr); max-width: 1200px; margin: auto; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
 .story-card { display: flex; flex-direction: column; min-height: 440px; padding: 2rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); transition: background .25s, transform .25s; }
 .story-card:hover { background: #20231f; transform: translateY(-4px); }
-.story-card.featured { background: var(--rust); color: white; }
-.chapter-number { color: var(--rust); font-family: var(--serif); font-size: 2rem; }
-.featured .chapter-number, .featured .chapter-place { color: var(--gold); }
-.chapter-place { margin: 1.5rem 0 .5rem; color: var(--rust); font-size: .72rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
+.chapter-number { color: var(--gold); font-family: var(--serif); font-size: 2rem; }
+.chapter-place { margin: 1.5rem 0 .5rem; color: var(--gold); font-size: .72rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
 .story-card h3 { margin: 0 0 1rem; font-size: 1.65rem; }
 .story-card p:not(.chapter-place) { font-size: .94rem; }
 .story-button { align-self: flex-start; margin-top: auto; padding: .7rem 0; color: inherit; background: transparent; border: 0; border-bottom: 1px solid currentColor; cursor: pointer; }
@@ -68,7 +74,7 @@ h1 em { color: var(--gold); font-weight: 400; }
 .poetry-inner { max-width: 850px; margin: auto; }
 .poetry-inner h2 { margin: 0 0 1.5rem; font-size: clamp(2.7rem, 6vw, 5rem); }
 .poetry-intro { max-width: 630px; margin: 0 0 1rem; font-size: 1.08rem; }
-.poetry-intro:last-of-type { margin-bottom: 3rem; }
+.poetry-credit { margin: 1.5rem 0 3rem; color: var(--gold); font-size: .95rem; }
 .poem-list { border-top: 1px solid var(--line); }
 .poem-select { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding: 1.5rem 0; color: var(--cream); background: transparent; border: 0; border-bottom: 1px solid var(--line); text-align: left; cursor: pointer; }
 .poem-select:hover, .poem-select:focus-visible { color: var(--gold); }
@@ -85,7 +91,7 @@ h1 em { color: var(--gold); font-weight: 400; }
 .poem-audio-note { color: rgba(245, 239, 227, .73); font-size: .9rem; }
 
 .why-now { background: var(--ink); }
-.why-photo { order: 2; background: #171713 url("images/dad-portrait.jpg") center 35% / cover no-repeat; }
+.why-copy { max-width: 760px; margin: auto; padding: clamp(4rem, 9vw, 8rem) 5vw; }
 .closing { padding: clamp(7rem, 14vw, 13rem) 5vw; background: #1d1e1a; }
 .final-line { margin-top: 4rem !important; color: var(--gold); font-family: var(--serif); font-size: clamp(1.8rem, 4vw, 3.5rem) !important; font-style: italic; }
 
@@ -115,9 +121,12 @@ footer { display: flex; justify-content: space-between; padding: 2rem 5vw; color
 
 @media (max-width: 850px) {
   .story-grid { grid-template-columns: 1fr 1fr; }
-  .turning-point, .why-now { grid-template-columns: 1fr; }
-  .turning-photo, .why-photo { min-height: 62vh; }
-  .why-photo { order: 0; }
+  .hero, .intro-feature, .turning-point { grid-template-columns: minmax(0, 1fr); }
+  .hero { min-height: auto; padding-bottom: 3rem; }
+  .hero-content { justify-self: start; }
+  .hero-image { max-width: 400px; }
+  .intro-photo { max-width: 540px; }
+  .turning-photo { max-height: 65svh; }
   .turning-copy, .why-copy { padding: 5rem 7vw; }
 }
 

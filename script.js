@@ -60,6 +60,34 @@ dialog.addEventListener("click", (event) => {
 // To add audio, put files in an "audio" folder beside index.html and set the path.
 const poems = [
   {
+    title: "To My Children",
+    text: `If perhaps someday
+I become senile.
+Bare with me, as
+I bore with you
+Through the senility
+Of your youth.`,
+    original: "images/to-my-children-original.jpg",
+    audio: ""
+  },
+  {
+    title: "Listen",
+    text: `Listen, can you hear it.
+Listen carefully, its there.
+Maybe if you were to sit.
+Sit quietly now, its everywhere.
+Its the sound of death.
+Yes someone is dying.
+You can feel his breath.
+Listen, his soul is crying.
+Someone spoke of violence.
+I'm not sure what was said.
+Now you can hear the silence.
+The dying man must be dead.`,
+    original: "images/listen-original.jpg",
+    audio: ""
+  },
+  {
     title: "Lefty",
     note: "My dad wrote this poem for me. I don't remember what prompted it.",
     text: `There was an old man called lefty.
@@ -104,34 +132,6 @@ For bending an ear is what I do best
 So I better stop now while there is
 Story LEFT.`,
     original: "images/lefty-original.jpg",
-    audio: ""
-  },
-  {
-    title: "To my children",
-    text: `If perhaps someday
-I become senile.
-Bare with me, as
-I bore with you
-Through the senility
-Of your youth.`,
-    original: "images/to-my-children-original.jpg",
-    audio: ""
-  },
-  {
-    title: "Listen",
-    text: `Listen, can you hear it.
-Listen carefully, its there.
-Maybe if you were to sit.
-Sit quietly now, its everywhere.
-Its the sound of death.
-Yes someone is dying.
-You can feel his breath.
-Listen, his soul is crying.
-Someone spoke of violence.
-I'm not sure what was said.
-Now you can hear the silence.
-The dying man must be dead.`,
-    original: "images/listen-original.jpg",
     audio: ""
   },
   {
